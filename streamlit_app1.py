@@ -251,7 +251,7 @@ def gemini_pro(prompt):
     ''' Input : Prompt 
         Output: Generated answer from the gemini-pro model
     '''
-    genai.configure(api_key="AIzaSyC-R7Vl2sFGZamlkgJgfpNPTSynKUlGKBc")   # google api
+    genai.configure(api_key="")   # google api
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(prompt + ". Use only 30 words to explain.")
     return response.text
